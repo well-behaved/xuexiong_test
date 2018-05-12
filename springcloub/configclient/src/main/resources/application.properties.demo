@@ -1,0 +1,9 @@
+spring.application.name=configserver
+#指明远程仓库的分支
+spring.cloud.config.label=master
+spring.cloud.config.profile=dev
+#指明配置服务中心的网址。
+spring.cloud.config.uri=http://localhost:9080/
+server.port=9081
+
+#xuexiansheng=asdf

@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: turbine
+server:
+  port: 7777
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8090/eureka/
+management:
+  port: 7778
+turbine:
+  #监控的服务名称
+  app-config: hystrix
+  #监控的服务集群名称
+  cluster-name-expression: new String('default')
+  combine-host-port: true
+
+

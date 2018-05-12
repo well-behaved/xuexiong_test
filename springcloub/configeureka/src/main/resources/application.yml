@@ -1,0 +1,13 @@
+server:
+  port: 8099
+  tomcat:
+      max-threads: 800
+      uri-encoding: UTF-8
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+    serviceUrl:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
